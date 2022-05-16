@@ -72,6 +72,7 @@ export class #StringExtensions extends String {
 import { #StringExtensions } from 'string-extensions.js';
 
 function camelCaseAll(arrayOfStrings) {
+    // We can use the toCamelCase() method because we imported #StringExtensions
     return arrayOfStrings.map(s => s.toCamelCase());
 }
 ```
@@ -82,9 +83,11 @@ import 'array-utils.js'
 
 const names = ['Spider-Man', 'Captain Marvel'];
 
+// We can safely use camelCaseAll() even without importing #StringExtensions
 console.log(camelCaseAll(names));
 // ['spiderMan', 'captainMarvel']
 
+// But we cannot write code that uses the toCamelCase() method
 console.log(names.map(s => s.toCamelCase()))
 // TypeError: "s".toCamelCase is not a function
 ```
