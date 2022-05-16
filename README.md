@@ -1,4 +1,21 @@
-# JavaScript Extension Methods
+# JavaScript Extension Methods Proposal
+
+This is a proposal to add extension methods to JavaScript.
+
+## What are extension methods?
+
+Extension methods are a way of adding new methods to a an existing class without
+modifying the class itself.
+
+The name and precise details of this feature vary across languages. It is called
+extension methods in C#. A similar feature in Ruby is called module
+augmentation, and there are likely others as well.
+
+## Why add extension methods?
+
+
+
+## Example
 
 ```js
 // string-extensions.js
