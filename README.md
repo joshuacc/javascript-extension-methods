@@ -27,5 +27,8 @@ const names = ['Spider-Man', 'Captain Marvel'];
 
 console.log(camelCaseAll(names));
 // ['spiderMan', 'captainMarvel']
+
+console.log(names.map(s => s.toCamelCase()))
+// TypeError: "s".toCamelCase is not a function
 ```
 
