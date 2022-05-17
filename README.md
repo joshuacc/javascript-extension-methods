@@ -50,7 +50,7 @@ to those extensions within its lexical scope.
 import { #FooExtensions } from 'foo.js';
 ```
 
-However, extension methods are not "viral." They do not spread beyond the
+However, extension methods are not "contagious." They do not spread beyond the
 specific modules that import them. So if there is a module `c.js` which imports
 `b.js` which then imports an extension method from `a.js`, `a.js` and `b.js`
 will have access to the extension methods, but `c.js` will not.
